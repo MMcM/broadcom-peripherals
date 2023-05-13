@@ -435,6 +435,72 @@
                     </fields>
                 </register>
                 <register>
+                    <name>GPPUD</name>
+                    <description>GPIO Pin Pull-up/down Enable</description>
+                    <addressOffset>0x94</addressOffset>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>PUD</name>
+                            <description>GPIO Pin Pull-up/down</description>
+                            <bitOffset>0</bitOffset>
+                            <bitWidth>2</bitWidth>
+                            <enumeratedValues>
+                                <name>PUD_PULL</name>
+                                <usage>read-write</usage>
+                                <headerEnumName>PUD_PULL</headerEnumName>
+                                <enumeratedValue>
+                                    <name>NONE</name>
+                                    <description>No pull</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>DOWN</name>
+                                    <description>Pull down</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>UP</name>
+                                    <description>Pull up</description>
+                                    <value>2</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                    </fields>
+                </register>
+                <register>
+                    <name>GPPUDCLK0</name>
+                    <description>GPIO Pin Pull-up/down Enable Clock 0</description>
+                    <addressOffset>0x98</addressOffset>
+                    <access>read-write</access>
+                    <fields>
+                        {% for i in range(0, 32) %}
+                        <field>
+                            <name>PUDCLK{{ i }}</name>
+                            <description>Assert clock on line {{ i }}</description>
+                            <bitOffset>{{ i }}</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        {% endfor %}
+                    </fields>
+                </register>
+                <register>
+                    <name>GPPUDCLK1</name>
+                    <description>GPIO Pin Pull-up/down Enable Clock 1</description>
+                    <addressOffset>0x9c</addressOffset>
+                    <access>read-write</access>
+                    <fields>
+                        {% for i in range(0, (altfunc | length - 32)) %}
+                        <field>
+                            <name>PUDCLK{{ 32 + i }}</name>
+                            <description>Assert clock on line {{ 32 + i }}</description>
+                            <bitOffset>{{ i }}</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        {% endfor %}
+                    </fields>
+                </register>
+                <register>
                     <name>EXTRA_MUX</name>
                     <description>Undocumented multiplexing bits</description>
                     <addressOffset>0xD0</addressOffset>
