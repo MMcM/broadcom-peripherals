@@ -8011,6 +8011,436 @@
                     </fields>
                 </register>
                 <register>
+                    <name>GPPUD</name>
+                    <description>GPIO Pin Pull-up/down Enable</description>
+                    <addressOffset>0x94</addressOffset>
+                    <access>read-write</access>
+                    <fields>
+                        <field>
+                            <name>PUD</name>
+                            <description>GPIO Pin Pull-up/down</description>
+                            <bitOffset>0</bitOffset>
+                            <bitWidth>2</bitWidth>
+                            <enumeratedValues>
+                                <name>PUD_PULL</name>
+                                <usage>read-write</usage>
+                                <headerEnumName>PUD_PULL</headerEnumName>
+                                <enumeratedValue>
+                                    <name>NONE</name>
+                                    <description>No pull</description>
+                                    <value>0</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>DOWN</name>
+                                    <description>Pull down</description>
+                                    <value>1</value>
+                                </enumeratedValue>
+                                <enumeratedValue>
+                                    <name>UP</name>
+                                    <description>Pull up</description>
+                                    <value>2</value>
+                                </enumeratedValue>
+                            </enumeratedValues>
+                        </field>
+                    </fields>
+                </register>
+                <register>
+                    <name>GPPUDCLK0</name>
+                    <description>GPIO Pin Pull-up/down Enable Clock 0</description>
+                    <addressOffset>0x98</addressOffset>
+                    <access>read-write</access>
+                    <fields>
+                        
+                        <field>
+                            <name>PUDCLK0</name>
+                            <description>Assert clock on line 0</description>
+                            <bitOffset>0</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK1</name>
+                            <description>Assert clock on line 1</description>
+                            <bitOffset>1</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK2</name>
+                            <description>Assert clock on line 2</description>
+                            <bitOffset>2</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK3</name>
+                            <description>Assert clock on line 3</description>
+                            <bitOffset>3</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK4</name>
+                            <description>Assert clock on line 4</description>
+                            <bitOffset>4</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK5</name>
+                            <description>Assert clock on line 5</description>
+                            <bitOffset>5</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK6</name>
+                            <description>Assert clock on line 6</description>
+                            <bitOffset>6</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK7</name>
+                            <description>Assert clock on line 7</description>
+                            <bitOffset>7</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK8</name>
+                            <description>Assert clock on line 8</description>
+                            <bitOffset>8</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK9</name>
+                            <description>Assert clock on line 9</description>
+                            <bitOffset>9</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK10</name>
+                            <description>Assert clock on line 10</description>
+                            <bitOffset>10</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK11</name>
+                            <description>Assert clock on line 11</description>
+                            <bitOffset>11</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK12</name>
+                            <description>Assert clock on line 12</description>
+                            <bitOffset>12</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK13</name>
+                            <description>Assert clock on line 13</description>
+                            <bitOffset>13</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK14</name>
+                            <description>Assert clock on line 14</description>
+                            <bitOffset>14</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK15</name>
+                            <description>Assert clock on line 15</description>
+                            <bitOffset>15</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK16</name>
+                            <description>Assert clock on line 16</description>
+                            <bitOffset>16</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK17</name>
+                            <description>Assert clock on line 17</description>
+                            <bitOffset>17</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK18</name>
+                            <description>Assert clock on line 18</description>
+                            <bitOffset>18</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK19</name>
+                            <description>Assert clock on line 19</description>
+                            <bitOffset>19</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK20</name>
+                            <description>Assert clock on line 20</description>
+                            <bitOffset>20</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK21</name>
+                            <description>Assert clock on line 21</description>
+                            <bitOffset>21</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK22</name>
+                            <description>Assert clock on line 22</description>
+                            <bitOffset>22</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK23</name>
+                            <description>Assert clock on line 23</description>
+                            <bitOffset>23</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK24</name>
+                            <description>Assert clock on line 24</description>
+                            <bitOffset>24</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK25</name>
+                            <description>Assert clock on line 25</description>
+                            <bitOffset>25</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK26</name>
+                            <description>Assert clock on line 26</description>
+                            <bitOffset>26</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK27</name>
+                            <description>Assert clock on line 27</description>
+                            <bitOffset>27</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK28</name>
+                            <description>Assert clock on line 28</description>
+                            <bitOffset>28</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK29</name>
+                            <description>Assert clock on line 29</description>
+                            <bitOffset>29</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK30</name>
+                            <description>Assert clock on line 30</description>
+                            <bitOffset>30</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK31</name>
+                            <description>Assert clock on line 31</description>
+                            <bitOffset>31</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                    </fields>
+                </register>
+                <register>
+                    <name>GPPUDCLK1</name>
+                    <description>GPIO Pin Pull-up/down Enable Clock 1</description>
+                    <addressOffset>0x9c</addressOffset>
+                    <access>read-write</access>
+                    <fields>
+                        
+                        <field>
+                            <name>PUDCLK32</name>
+                            <description>Assert clock on line 32</description>
+                            <bitOffset>0</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK33</name>
+                            <description>Assert clock on line 33</description>
+                            <bitOffset>1</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK34</name>
+                            <description>Assert clock on line 34</description>
+                            <bitOffset>2</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK35</name>
+                            <description>Assert clock on line 35</description>
+                            <bitOffset>3</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK36</name>
+                            <description>Assert clock on line 36</description>
+                            <bitOffset>4</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK37</name>
+                            <description>Assert clock on line 37</description>
+                            <bitOffset>5</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK38</name>
+                            <description>Assert clock on line 38</description>
+                            <bitOffset>6</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK39</name>
+                            <description>Assert clock on line 39</description>
+                            <bitOffset>7</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK40</name>
+                            <description>Assert clock on line 40</description>
+                            <bitOffset>8</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK41</name>
+                            <description>Assert clock on line 41</description>
+                            <bitOffset>9</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK42</name>
+                            <description>Assert clock on line 42</description>
+                            <bitOffset>10</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK43</name>
+                            <description>Assert clock on line 43</description>
+                            <bitOffset>11</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK44</name>
+                            <description>Assert clock on line 44</description>
+                            <bitOffset>12</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK45</name>
+                            <description>Assert clock on line 45</description>
+                            <bitOffset>13</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK46</name>
+                            <description>Assert clock on line 46</description>
+                            <bitOffset>14</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK47</name>
+                            <description>Assert clock on line 47</description>
+                            <bitOffset>15</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK48</name>
+                            <description>Assert clock on line 48</description>
+                            <bitOffset>16</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK49</name>
+                            <description>Assert clock on line 49</description>
+                            <bitOffset>17</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK50</name>
+                            <description>Assert clock on line 50</description>
+                            <bitOffset>18</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK51</name>
+                            <description>Assert clock on line 51</description>
+                            <bitOffset>19</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK52</name>
+                            <description>Assert clock on line 52</description>
+                            <bitOffset>20</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                        <field>
+                            <name>PUDCLK53</name>
+                            <description>Assert clock on line 53</description>
+                            <bitOffset>21</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        
+                    </fields>
+                </register>
+                <register>
                     <name>EXTRA_MUX</name>
                     <description>Undocumented multiplexing bits</description>
                     <addressOffset>0xD0</addressOffset>
