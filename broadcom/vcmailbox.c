@@ -214,7 +214,9 @@ uint32_t vcmailbox_get_clock_rate_measured(vcmailbox_clock_id_t clock_id) {
     vcmailbox_get_clock_rate_measured_t* tag = (vcmailbox_get_clock_rate_measured_t*) &buf->data;
     *tag = VCMAILBOX_GET_CLOCK_RATE_MEASURED_DEFAULTS;
     tag->request.clock_id = clock_id;
-    vcmailbox_request(buf);
+    if (!vcmailbox_request(buf)) {
+        return 0;
+    }
     return tag->response.rate_in_hz;
 }
 
